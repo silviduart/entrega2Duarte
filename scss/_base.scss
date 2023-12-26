@@ -1,0 +1,136 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .containerLogo {
+      height: 100px;
+      border-radius: 50px;
+      background-color: $color-rosado;
+      img {
+        height: 100px;
+      }
+    }
+    .titulo {
+      color:$color-violeta;
+      margin-top: 45px;
+      font-size: 30px;
+    }
+    .containerImage {
+      height: 100px;
+      border-radius: 50px;
+      img {
+        height: 100px;
+      }
+    }
+  }
+  
+  .listaNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    height: 50px;
+    background-color:$color-rosado;
+    margin: 0;
+    li {
+      margin-top: 15px;
+      margin-right: 40px;
+      a {
+        color: $color-blanco;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: $color-blanco;
+  }
+  .navbar-light .navbar-brand {
+    color: $color-blanco;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-amarillo;
+    .redesSociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        width: 80px;
+      }
+    }
+  }
+
+  /*media querys*/
+@media (max-width:$computador ) {
+    /*estilos header*/
+    .containerLogo {
+      margin-top: 0px;
+      height: 80px;
+    }
+    .containerImage {
+      height: 80px;
+    }
+    .containerLogo img {
+      height: 80px;
+    }
+    .containerImage img {
+      height: 80px;
+    }
+    .titulo {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: $tablet) {
+    /*estilos header*/
+    .header {
+      height: 90px;
+    }
+    .containerLogo {
+      height: 60px;
+    }
+    .containerImage {
+      height: 60px;
+    }
+    .containerLogo img {
+      height: 60px;
+    }
+    .containerImage img {
+      height: 60px;
+    }
+    .titulo {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: $movil) {
+    /*estilos header*/
+    .header {
+      height: 90px;
+      .containerLogo {
+        height: 60px;
+        img {
+          height: 60px;
+        }
+      }
+      .containerImage {
+        display: none;
+        img {
+          height: 60px;
+        }
+      }
+      .titulo {
+        display: none;
+      }
+    }
+  }
+  

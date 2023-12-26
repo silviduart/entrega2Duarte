@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    th,
+    td {
+      border: 1px solid $color-negro;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  .tituloTrofeos {
+    margin-left: 50px;
+  }

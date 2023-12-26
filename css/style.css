@@ -1,0 +1,181 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .containerLogo {
+  height: 100px;
+  border-radius: 50px;
+  background-color: rgb(182, 102, 182);
+}
+.header .containerLogo img {
+  height: 100px;
+}
+.header .titulo {
+  color: blueviolet;
+  margin-top: 45px;
+  font-size: 30px;
+}
+.header .containerImage {
+  height: 100px;
+  border-radius: 50px;
+}
+.header .containerImage img {
+  height: 100px;
+}
+
+.listaNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  height: 50px;
+  background-color: rgb(182, 102, 182);
+  margin: 0;
+}
+.listaNav li {
+  margin-top: 15px;
+  margin-right: 40px;
+}
+.listaNav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: yellow;
+}
+.footer .redesSociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .redesSociales i {
+  width: 80px;
+}
+
+/*media querys*/
+@media (max-width: 992px) {
+  /*estilos header*/
+  .containerLogo {
+    margin-top: 0px;
+    height: 80px;
+  }
+  .containerImage {
+    height: 80px;
+  }
+  .containerLogo img {
+    height: 80px;
+  }
+  .containerImage img {
+    height: 80px;
+  }
+  .titulo {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  /*estilos header*/
+  .header {
+    height: 90px;
+  }
+  .containerLogo {
+    height: 60px;
+  }
+  .containerImage {
+    height: 60px;
+  }
+  .containerLogo img {
+    height: 60px;
+  }
+  .containerImage img {
+    height: 60px;
+  }
+  .titulo {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  /*estilos header*/
+  .header {
+    height: 90px;
+  }
+  .header .containerLogo {
+    height: 60px;
+  }
+  .header .containerLogo img {
+    height: 60px;
+  }
+  .header .containerImage {
+    display: none;
+  }
+  .header .containerImage img {
+    height: 60px;
+  }
+  .header .titulo {
+    display: none;
+  }
+}
+.contenidoAbout {
+  height: 500px;
+}
+
+.contenidoIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 500px;
+  background-color: rgb(221, 169, 221);
+  margin-top: 0;
+}
+.contenidoIndex .infoIndex {
+  width: 50%;
+}
+.contenidoIndex .infoIndex article {
+  margin: 50px;
+  color: rgb(100, 0, 193);
+}
+.contenidoIndex .imagenIndex {
+  width: 50%;
+}
+.contenidoIndex .imagenIndex img {
+  height: 500px;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+.tituloTrofeos {
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.contenidoIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    background-color:$color-background-index ;
+    margin-top: 0;
+    .infoIndex {
+      width: 50%;
+      article {
+        margin: 50px;
+        color: $color-letra-index;
+      }
+    }
+    .imagenIndex {
+      width: 50%;
+      img {
+        height: 500px;
+        width: 100%;
+      }
+    }
+  }
