@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   height: 100%;
   margin: 0;
@@ -35,7 +36,7 @@ body {
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  height: 50px;
+  height: 60px;
   background-color: rgb(182, 102, 182);
   margin: 0;
 }
@@ -46,6 +47,10 @@ body {
 .listaNav li a {
   color: white;
   text-decoration: none;
+}
+
+.navbar-nav {
+  background-color: rgba(182, 102, 182, 0.7);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -133,16 +138,71 @@ body {
   .header .titulo {
     display: none;
   }
+  .footer p {
+    font-size: 10px;
+    padding-top: 10px;
+  }
 }
 .contenidoAbout {
   height: 500px;
 }
 
+@media (max-width: 620px) {
+  .contenidoAbout {
+    height: 670px;
+  }
+}
+@media (max-width: 768px) {
+  .contenidoAbout {
+    height: 650px;
+  }
+  .contenidoAbout section h2 {
+    font-size: 16px;
+  }
+  .contenidoAbout section p {
+    font-size: 13px;
+  }
+}
+.contenedorContacto {
+  background-color: rgb(221, 169, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.contenedorContacto h1 {
+  color: blueviolet;
+}
+.contenedorContacto form label {
+  color: blueviolet;
+  margin: 10px;
+}
+.contenedorContacto form input {
+  border-radius: 5px;
+}
+.contenedorContacto form .nombre {
+  margin-left: 70px;
+}
+.contenedorContacto form .contraseña {
+  margin-left: 50px;
+}
+.contenedorContacto form .registrarse {
+  margin-left: 180px;
+  background-color: yellow;
+  color: rgb(100, 0, 193);
+}
+
+@media (max-width: 420px) {
+  .mensaje {
+    height: 200px;
+  }
+}
 .contenidoIndex {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 500px;
+  height: 620px;
   background-color: rgb(221, 169, 221);
   margin-top: 0;
 }
@@ -150,7 +210,9 @@ body {
   width: 50%;
 }
 .contenidoIndex .infoIndex article {
-  margin: 50px;
+  padding-top: 50px;
+  margin: 10px;
+  font-size: 15px;
   color: rgb(100, 0, 193);
 }
 .contenidoIndex .imagenIndex {
@@ -159,23 +221,81 @@ body {
 .contenidoIndex .imagenIndex img {
   height: 500px;
   width: 100%;
+  object-fit: contain;
 }
 
-table {
+@media (max-width: 992px) {
+  .contenidoIndex {
+    height: 800px;
+  }
+}
+@media (max-width: 768px) {
+  .contenidoIndex {
+    flex-direction: column;
+    height: 600px;
+  }
+  .contenidoIndex .infoIndex {
+    width: 100%;
+  }
+  .contenidoIndex .infoIndex article {
+    font-size: 12px;
+  }
+  .contenidoIndex .imagenIndex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenidoIndex .imagenIndex img {
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+    margin-top: -80px;
+  }
+}
+.contenedorTrofeos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221, 169, 221);
+  height: 520px;
+}
+.contenedorTrofeos table {
   border-collapse: collapse;
   width: 50%;
   margin-bottom: 30px;
   margin-left: 50px;
 }
-table th,
-table td {
-  border: 1px solid #000;
+.contenedorTrofeos table th,
+.contenedorTrofeos table td {
+  border: 1px solid blueviolet;
   padding: 8px;
   text-align: center;
 }
-
-.tituloTrofeos {
+.contenedorTrofeos .tituloTrofeos {
   margin-left: 50px;
+  color: rgb(100, 0, 193);
+}
+
+@media (max-width: 768px) {
+  .contenedorTrofeos {
+    height: 670px;
+  }
+}
+@media (max-width: 420px) {
+  .contenedorTrofeos {
+    height: 750px;
+  }
+}
+.contenedor {
+  padding: 20px;
+  background-color: rgb(221, 169, 221);
+}
+
+.custom-image-size {
+  height: 400px;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,21 @@
 .contenidoAbout {
     height: 500px;
   }
+  @media(max-width:620px){
+    .contenidoAbout{
+      height: 670px;
+    }
+  }
+  @media(max-width:$tablet){
+    .contenidoAbout{
+      height: 650px;
+      section{
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 13px;
+        }
+      }
+    }
+  }

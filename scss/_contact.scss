@@ -1,0 +1,36 @@
+.contenedorContacto{
+    background-color: $color-background-index;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    h1{
+        color: $color-violeta;
+    }
+    form{
+        label{
+            color: $color-violeta;
+            margin:10px;
+        }
+        input{
+                border-radius: 5px;
+        }
+        .nombre{
+            margin-left: 70px;
+        }
+        .contraseña{
+            margin-left: 50px;
+        }
+        .registrarse{
+            margin-left: 180px;
+            background-color: $color-amarillo;
+            color: $color-letra-index;
+        }    
+    }
+}
+@media(max-width:$movil){
+    .mensaje{
+      height: 200px;
+    }
+  }

@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/4496210484.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <title>Inicio</title>
   </head>
@@ -21,61 +22,39 @@
         <img src="../images/caballo.png" alt="imagenCaballo" />
       </div>
     </header>
-    <nav>
-      <ul class="listaNav">
-        <li>
-          <a href="../index.html">Inicio</a>
-        </li>
-        <li><a href="./about.html">Acerca de</a></li>
-        <li><a href="./contact.html">Contacto</a></li>
-        <li><a href="./galery.html">Galeria</a></li>
-        <li><a href="./trophies.html">Premios</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light listaNav">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./galery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./trophies.html" >Premios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <main class="contenidoAbout">
       <section>
-        <h2>What is Lorem Ipsum?</h2>
+        <h2>Quien es Sarita?</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Con tan solo 8 años, Sarita encanta a todos con su personalidad excepcionalmente encantadora. Su temperamento, fuerte pero noble, refleja la determinación y la dulzura que la hacen única. Es una fuerza de la naturaleza en sí misma, siempre activa y llena de energía, explorando el mundo con ojos curiosos y una mente inquisitiva. Amante innata de la naturaleza y los animales, Sarita encuentra su felicidad en los bosques y campos, donde su corazón rebosa de alegría al interactuar con cada criatura y descubrir los tesoros escondidos en la maravilla natural que la rodea. Su espíritu vivaz y su amor por la vida dejan una huella brillante en aquellos que tienen el privilegio de conocerla.
         </p>
-        <h2>Where does it come from?</h2>
+        <h2>Como se volvió Jinete profesional? </h2>
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32. The standard chunk of Lorem Ipsum used since the
-          1500s is reproduced below for those interested. Sections 1.10.32 and
-          1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-          reproduced in their exact original form, accompanied by English
-          versions from the 1914 translation by H. Rackham.
-        </p>
-        <h2>Why do we use it?</h2>
-        <p>
-          t is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
+          Desde el año 2021 Sarita se encuentra vinculada a la Fundacion Sueño Ecuestre, lugar que le abrio sus partes para apoyarla en su desarrollo integral, por lo que desde el 2021 empezó a tener contacto con los caballos en su diario vivir, primero como algo terapeutico pero con el pasar del tiempo y el amor que Sarita mostró por ese deporte en la Fundacion se enfocaron en darle las herramientas y el conocimiento para hacerlo de forma competitiva, gracias a esto a principios del año 2023 y con el esfuerzo de la directora se logró que adaptaran a las personas con alguna clase de condición o discapacidad los requerimientos para poder certificarse como jinete profesional
         </p>
       </section>
       <aside></aside>
@@ -88,5 +67,6 @@
         <i class="fa-brands fa-square-twitter"></i>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
