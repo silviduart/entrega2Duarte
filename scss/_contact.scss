@@ -1,9 +1,6 @@
 .contenedorContacto{
     background-color: $color-background-index;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-contacto;
     padding: 20px;
     h1{
         color: $color-violeta;

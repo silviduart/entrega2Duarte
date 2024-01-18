@@ -1,7 +1,5 @@
 .contenidoIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex-contenido-index;
     height: 620px;
     background-color:$color-background-index ;
     margin-top: 0;

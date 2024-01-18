@@ -1,8 +1,5 @@
 .contenedorTrofeos{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-contacto;
   background-color: $color-background-index;
   height: 520px;
   table {

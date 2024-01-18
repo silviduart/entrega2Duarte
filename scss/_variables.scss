@@ -7,4 +7,17 @@ $color-letra-index:rgb(100, 0, 193);
 $color-negro: #000;
 $computador:992px;
 $tablet:768px;
-$movil:420px
+$movil:420px;
+
+@mixin flex-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-contenido-index{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
